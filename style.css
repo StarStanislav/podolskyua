@@ -1,0 +1,11 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;background:#050505;overflow:hidden;font-family:Arial,sans-serif}
+body{display:flex;justify-content:center;align-items:center;color:#f4f4f4}
+.container{text-align:center;animation:fade 1.4s ease}
+.logo{width:min(240px,55vw);animation:float 5s ease-in-out infinite;filter:drop-shadow(0 10px 25px rgba(0,0,0,.35))}
+.username{margin-top:20px;font-size:12px;letter-spacing:6px;color:#777;text-transform:lowercase}
+.counter{margin-top:34px;font-size:36px;font-weight:800;letter-spacing:6px}
+.noise{position:fixed;inset:0;pointer-events:none;opacity:.03;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:4px 4px}
+@keyframes spin{from{transform:rotateY(0)}to{transform:rotateY(360deg)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
